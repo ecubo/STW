@@ -128,7 +128,7 @@ function initApp() {
         	marginLeft: "-100%",
             ease: Back.easeIn.config(1.4),
         });
-//        if ($('body').data('so') == 'ios') {
+        if ($('body').data('so') == 'ios') {
 	        TweenMax.to('#bkImage', 1, {
 	        	backgroundImage: bk,
 	        	opacity: 1
@@ -136,7 +136,7 @@ function initApp() {
 	        TweenMax.to('#contentSubcategoryList', 1, {
 	        	backgroundImage: bk2,
 	        });
- /*       }
+        }
         else {
 	        TweenMax.set('#bkImage', {
 	        	backgroundImage: bk,
@@ -145,7 +145,7 @@ function initApp() {
 	        TweenMax.set('#contentSubcategoryList', {
 	        	backgroundImage: bk2,
 	        });
-        }*/
+        }
 		$('#contenedor').addClass('active');
 
 		$('header').removeClass('active');
@@ -359,17 +359,17 @@ function initApp() {
         	marginLeft: "-200%",
             ease: Back.easeIn.config(1.4),
         });
-//        if ($('body').data('so') == 'ios') {
+        if ($('body').data('so') == 'ios') {
 	        TweenMax.to('#bkImage, #contentSubcategoryList', 1, {
 	//        	backgroundImage: bk,
 	        	opacity: 0
 	        });
-/*        }
+        }
         else {
 	        TweenMax.set('#bkImage, #contentSubcategoryList', {
 	        	opacity: 0
 	        });
-        }*/
+        }
 		$('#contenedor').addClass('active2');
 
 		var color = $(this).find('option:selected').attr('data-color');
@@ -488,14 +488,14 @@ function initApp() {
         	marginLeft: "0",
             ease: Back.easeIn.config(1.4),
         });
-//        if ($('body').data('so') == 'ios') {
+        if ($('body').data('so') == 'ios') {
 	        TweenMax.to('#bkImage', 1, {
 	        	opacity: 0
 	        });
 	        TweenMax.to('#contentSubcategoryList', 1, {
 	        	backgroundImage: '',
 	        });
-/*        }
+        }
         else {
 	        TweenMax.set('#bkImage', {
 	        	opacity: 0
@@ -503,7 +503,7 @@ function initApp() {
 	        TweenMax.set('#contentSubcategoryList', {
 	        	backgroundImage: '',
 	        });
-        }*/
+        }
 		$('#contenedor').removeClass('active');
 
 
@@ -527,16 +527,16 @@ function initApp() {
         	marginLeft: "-100%",
             ease: Back.easeIn.config(1.4),
         });
-//        if ($('body').data('so') == 'ios') {
+        if ($('body').data('so') == 'ios') {
 	        TweenMax.to('#bkImage, #contentSubcategoryList', 1, {
 	        	opacity: 1
 	        });
-/*        }
+        }
         else {
 	        TweenMax.set('#bkImage, #contentSubcategoryList', {
 	        	opacity: 1
 	        });
-        }*/
+        }
 		$('#contenedor').removeClass('active2');
 
 		$('h2').fadeOut(300, function() {
@@ -1667,9 +1667,6 @@ function changeColor(color) {
 
 
 /* BORRAR. Solo para pruebas Chrome
-*******************************************/
-
-/*
 
 $(document).ready(function() {
 				$.ajax({
@@ -1831,4 +1828,6 @@ $(document).ready(function() {
 
 	 initApp();
 
-});*/
+});
+
+*******************************************/
