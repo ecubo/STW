@@ -1,0 +1,215 @@
+/*********************************
+*********** FONT-FACE ************
+**********************************/
+
+@font-face {
+    font-family: 'bryant';
+    src: url('../fonts/bryant-lightcondensed-webfont.eot');
+    src: url('../fonts/bryant-lightcondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bryant-lightcondensed-webfont.woff') format('woff'),
+         url('../fonts/bryant-lightcondensed-webfont.ttf') format('truetype'),
+         url('../fonts/bryant-lightcondensed-webfont.svg#bryantlight_condensed') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bryant';
+    src: url('../fonts/bryant-regularcondensed-webfont.eot');
+    src: url('../fonts/bryant-regularcondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bryant-regularcondensed-webfont.woff') format('woff'),
+         url('../fonts/bryant-regularcondensed-webfont.ttf') format('truetype'),
+         url('../fonts/bryant-regularcondensed-webfont.svg#bryantregular_condensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bryant';
+    src: url('../fonts/bryant-mediumcondensed-webfont.eot');
+    src: url('../fonts/bryant-mediumcondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bryant-mediumcondensed-webfont.woff') format('woff'),
+         url('../fonts/bryant-mediumcondensed-webfont.ttf') format('truetype'),
+         url('../fonts/bryant-mediumcondensed-webfont.svg#bryantmedium_condensed') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bryant';
+    src: url('../fonts/bryant-boldcondensed-webfont.eot');
+    src: url('../fonts/bryant-boldcondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bryant-boldcondensed-webfont.woff') format('woff'),
+         url('../fonts/bryant-boldcondensed-webfont.ttf') format('truetype'),
+         url('../fonts/bryant-boldcondensed-webfont.svg#bryantbold_condensed') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*********************************
+*********** RESETS ************
+**********************************/
+
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #00baff;
+	color: #fff;
+	background-position: left top;
+	background-repeat: repeat-x;
+	background-image: url(../img/toldo.png);
+	font-family: 'bryant', arial;
+}
+
+div {
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+/*********************************
+*********** STYLES ************
+**********************************/
+
+#wrap {
+	width: 100%;
+	max-width: 800px;
+	height: 100%;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: center;
+	background-image: url(../img/bk.png);
+}
+
+#markets {
+	width: 100%;
+	max-width: 400px;
+	height: 100px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translate(-50%,0);
+	-moz-transform: translate(-50%,0);
+	transform: translate(-50%,0);
+}
+
+#markets li {
+	float: left;
+	width: 50%;
+	height: 100%;
+	padding: 20px;
+}
+
+#markets li a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+#markets li img {
+	width: 100%;
+}
+
+#play {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 4px solid #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background-color: #385984;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	box-shadow: 0 0 10px rgba(0,0,0,.6);
+	-webkit-transition: opacity .6s linear;
+	-moz-transition: opacity .6s linear;
+	transition: opacity .6s linear;
+}
+
+#play:after {
+	width: 0;
+	height: 0;
+	border-top: 12px solid transparent;
+	border-left: 20px solid #fff;
+	border-bottom: 12px solid transparent;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-8px,-12px);
+	-moz-transform: translate(-8px,-12px);
+	transform: translate(-8px,-12px);
+}
+
+#mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	display: none;
+	opacity: 0;
+	-webkit-transition: opacity .6s linear;
+	-moz-transition: opacity .6s linear;
+	transition: opacity .6s linear;
+}
+
+video {
+	height: 90%;
+	width: auto;
+	max-width: 90%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-transition: opacity .6s linear;
+	-moz-transition: opacity .6s linear;
+	transition: opacity .6s linear;
+	display: none;
+	opacity: 0;
+}
+
+#close {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 4px solid #fff;
+	background-color: #385984;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: none;
+	opacity: 0;
+}
+
+#close:after {
+	position: absolute;
+	content: "X";
+	width: 100%;
+	text-align: center;
+	line-height: 44px;
+	font-weight: bold;
+	font-size: 32px;
+}

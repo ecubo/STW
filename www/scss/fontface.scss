@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'bryant';
+    src: url('../fonts/bryant-lightcondensed-webfont.eot');
+    src: url('../fonts/bryant-lightcondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bryant-lightcondensed-webfont.woff') format('woff'),
+         url('../fonts/bryant-lightcondensed-webfont.ttf') format('truetype'),
+         url('../fonts/bryant-lightcondensed-webfont.svg#bryantlight_condensed') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bryant';
+    src: url('../fonts/bryant-regularcondensed-webfont.eot');
+    src: url('../fonts/bryant-regularcondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bryant-regularcondensed-webfont.woff') format('woff'),
+         url('../fonts/bryant-regularcondensed-webfont.ttf') format('truetype'),
+         url('../fonts/bryant-regularcondensed-webfont.svg#bryantregular_condensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bryant';
+    src: url('../fonts/bryant-mediumcondensed-webfont.eot');
+    src: url('../fonts/bryant-mediumcondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bryant-mediumcondensed-webfont.woff') format('woff'),
+         url('../fonts/bryant-mediumcondensed-webfont.ttf') format('truetype'),
+         url('../fonts/bryant-mediumcondensed-webfont.svg#bryantmedium_condensed') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bryant';
+    src: url('../fonts/bryant-boldcondensed-webfont.eot');
+    src: url('../fonts/bryant-boldcondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bryant-boldcondensed-webfont.woff') format('woff'),
+         url('../fonts/bryant-boldcondensed-webfont.ttf') format('truetype'),
+         url('../fonts/bryant-boldcondensed-webfont.svg#bryantbold_condensed') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
